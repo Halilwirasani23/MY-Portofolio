@@ -1,0 +1,204 @@
+body {
+  font-family : Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  padding-bottom: 55px; /* Jarak yang cukup dari bagian bawah */
+  
+  
+}
+
+header {
+  background-color: #282c34;
+  color: white;
+  padding: 15px;
+  text-align:center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+ 
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+#about {
+  background-color: #f9f9f9; /* Warna latar belakang yang lembut */
+  padding: 20px; /* Jarak dalam */
+  border-radius: 8px; /* Sudut yang membulat */
+  margin: 20px 0; /* Jarak luar */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk kedalaman */
+}
+
+#about h2 {
+  font-size: 28px; /* Ukuran font untuk judul */
+  color: #333; /* Warna teks judul */
+}
+
+#about p {
+  font-size: 16px; /* Ukuran font untuk deskripsi */
+  color: #555; /* Warna teks deskripsi */
+  line-height: 1.5; /* Jarak antar baris */
+}
+
+.btn {
+  display: inline-block; /* Mengubah ke tampilan inline-block */
+  padding: 10px 20px; /* Jarak dalam tombol */
+  background-color: #2693e0f9; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  text-decoration: none; /* Menghapus garis bawah */
+  border-radius: 5px; /* Sudut membulat untuk tombol */
+  margin-top: 15px; /* Jarak atas */
+  transition: background-color 0.3s ease; /* Transisi warna saat hover */
+}
+
+.btn:hover {
+  background-color: #128C7E; /* Warna saat tombol di-hover */
+}
+
+#projects {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin:20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#projects h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+#projects p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+
+}
+
+#contact {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+  font-size: 28px;
+  color:#333;
+}
+
+#contact p{
+  text-align: center;
+}
+
+#contact {
+  background-color: white; /* Warna latar belakang */
+  padding: 20px; /* Jarak dalam */
+  border-radius: 8px; /* Sudut membulat */
+  margin: 20px 0; /* Jarak luar */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+form {
+  background-color: white;
+  display: flex; /* Menggunakan Flexbox */
+  flex-direction: column; /* Mengatur arah kolom */
+}
+
+form label {
+  margin-bottom: 10px; /* Jarak bawah dari label */
+  font-family: 'Roboto', sans-serif; /* Mengganti font menjadi Roboto */
+  font-size: 16px; /* Ukuran font */
+  color: #333; /* Warna font */
+}
+
+form input, form textarea {
+  width: 30%; /* Lebar penuh */
+  padding: 10px; /* Jarak dalam */
+  margin-bottom: 10px; /* Jarak bawah */
+  border: 1px solid #ccc; /* Border */
+  border-radius: 4px; /* Sudut membulat */
+}
+
+form button {
+  background-color: #2693e0; /* Warna tombol */
+  color: white; /* Warna teks tombol */
+  border: none; /* Tanpa border */
+  padding: 10px 15px; /* Jarak dalam tombol */
+  width: 10%;
+  border-radius: 5px; /* Sudut membulat */
+  cursor: pointer; /* Cursor tangan saat hover */
+}
+
+form button:hover {
+  background-color: #128C7E; /* Warna saat hover */
+}
+
+
+
+footer {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 0px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+p a {
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+  color: #333333; /* Warna default ikon */
+  font-size: 24px; /* Ukuran ikon */
+  margin-right: 15px; /* Memberikan jarak antar ikon */
+}
+
+p a i {
+  margin-right: 8px; /* Jarak antara ikon dan teks (jika ada) */
+}
+
+p a:hover {
+  color: #25D366; /* Warna saat di-hover, bisa kamu ganti sesuai preferensi */
+}
+
+p a:hover .fa-envelope {
+  color: #555555; /* Warna untuk ikon email saat di-hover */
+}
+
+p a:hover .fa-whatsapp {
+  color: #128C7E; /* Warna untuk ikon WhatsApp saat di-hover */
+}
+
+p a:hover .fa-instagram {
+  color: #E4405F; /* Warna untuk ikon Instagram saat di-hover */
+}
+
+p a:hover .fa-linkedin {
+  color: #0e76a8; /* Warna biru khas LinkedIn */
+}
+   
+
+  

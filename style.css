@@ -153,15 +153,14 @@ form button:hover {
 /* Responsif untuk HP (max width 768px) */
 
 @media (max-width: 768px) {
-  form input, foem textarea {
-    width: 90%;
+  form input, form textarea {
+    width: 90%; /* Lebar penuh pada perangkat mobile */
   }
-
+  
   form button {
-    width: 50%;
+    width: 50%; /* Lebar tombol diperbesar pada perangkat mobile */
   }
 }
-
 
 footer {
   background-color: #282c34;

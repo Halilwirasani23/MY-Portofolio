@@ -237,6 +237,33 @@ p a:hover .fa-linkedin {
   opacity: 0; /* Buat tidak terlihat */
 }
 
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+  #response-message {
+    width: 90%; /* Lebar notifikasi yang lebih kecil */
+    font-size: 16px; /* Ukuran teks lebih kecil */
+    padding: 10px; /* Padding lebih kecil */
+    top: -50px; /* Posisi awal tetap */
+  }
+
+  #response-message.show {
+    top: 10px; /* Tampilkan lebih rendah pada layar HP */
+  }
+}
+
+/* Responsif untuk tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #response-message {
+    width: 80%; /* Lebar notifikasi menengah */
+    font-size: 17px; /* Ukuran teks menengah */
+    padding: 12px;
+    top: -50px; /* Posisi awal tetap */
+  }
+
+  #response-message.show {
+    top: 15px; /* Tampilkan dari atas */
+  }
+}
    
 
   

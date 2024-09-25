@@ -209,6 +209,34 @@ p a:hover .fa-instagram {
 p a:hover .fa-linkedin {
   color: #0e76a8; /* Warna biru khas LinkedIn */
 }
+
+/* Tambahkan ini di file CSS */
+#response-message {
+  position: fixed;
+  top: -50px; /* Awalnya di luar viewport */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0e76a8; /* Warna latar belakang untuk sukses */
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  z-index: 9999;
+  opacity: 0; /* Awalnya tidak terlihat */
+  transition: all 0.5s ease-in-out;
+}
+
+/* Animasi saat masuk */
+#response-message.show {
+  top: 20px; /* Geser ke bawah ketika ditampilkan */
+  opacity: 1; /* Buat terlihat */
+}
+
+/* Animasi saat keluar */
+#response-message.hide {
+  top: -50px; /* Geser ke atas ketika keluar */
+  opacity: 0; /* Buat tidak terlihat */
+}
+
    
 
   

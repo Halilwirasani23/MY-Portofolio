@@ -216,13 +216,18 @@ p a:hover .fa-linkedin {
   top: -50px; /* Awalnya di luar viewport */
   left: 50%;
   transform: translateX(-50%);
-  background-color: #0e76a8; /* Warna latar belakang untuk sukses */
+  background: linear-gradient(90deg, #4CAF50, #2E7D32); /* Warna latar belakang untuk sukses */
   color: white;
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 9999;
   opacity: 0; /* Awalnya tidak terlihat */
   transition: all 0.5s ease-in-out;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Animasi saat masuk */
@@ -263,6 +268,13 @@ p a:hover .fa-linkedin {
   #response-message.show {
     top: 15px; /* Tampilkan dari atas */
   }
+}
+
+/* Style untuk ikon centang di notifikasi */
+
+#response-message i {
+  margin-right: 10px;
+  font-size: 20px;
 }
    
 

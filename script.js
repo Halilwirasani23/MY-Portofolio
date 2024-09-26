@@ -32,7 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const responseMessage = document.getElementById('response-message');
         
         // Tampilkan pesan dengan animasi
-        responseMessage.innerText = 'Message sent successfully!';
+        responseMessage.innerHTML = '<i class="fas fa-check-circle"></i>Message sent successfully!';
+        responseMessage.classList.remove('hide');
         responseMessage.classList.add('show');
 
         // Hilangkan pesan setelah 3 detik dengan animasi keluar
@@ -40,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
           responseMessage.classList.remove('show');
           responseMessage.classList.add('hide');
         }, 3000);
+      }),500};
 
         // Reset form
         document.getElementById('contact-form').reset(); 
@@ -48,11 +50,4 @@ document.addEventListener('DOMContentLoaded', function() {
         responseMessage.innerText = 'Error sending message: ' + JSON.stringify(error);
         responseMessage.classList.add('show');
 
-        // Hilangkan pesan setelah 3 detik dengan animasi keluar
-        setTimeout(function() {
-          responseMessage.classList.remove('show');
-          responseMessage.classList.add('hide');
-        }, 3000);
-      });
-  };
 });
